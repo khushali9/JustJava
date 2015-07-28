@@ -16,6 +16,14 @@
 
      />
 
+    <Button
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="+"
+        android:layout_marginLeft="16dp"
+        android:onClick="increment"
+        />
+
     <TextView android:text="0"
         android:id="@+id/textquant"
         android:layout_width="wrap_content"
@@ -27,6 +35,15 @@
         android:textColor="@android:color/black"
 
      />
+
+    <Button
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="-"
+        android:layout_marginLeft="16dp"
+        android:onClick="decrement"
+
+        />
 
     <TextView android:text="PRICE"
 
