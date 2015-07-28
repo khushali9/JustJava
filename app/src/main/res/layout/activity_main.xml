@@ -11,6 +11,7 @@
         android:layout_height="wrap_content"
         android:paddingBottom="16dp"
         android:paddingLeft="16dp"
+        android:paddingTop="16dp"
         android:textColor="@android:color/darker_gray"
 
      />
@@ -27,12 +28,35 @@
 
      />
 
+    <TextView android:text="PRICE"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:textColor="@android:color/darker_gray"
+
+        />
+
+    <TextView android:text="$0"
+        android:id="@+id/textprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+
+        />
+
     <Button
         android:id="@+id/btnOrder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ORDER"
         android:layout_marginLeft="16dp"
+        android:onClick="submitOrder"
     />
 
 
