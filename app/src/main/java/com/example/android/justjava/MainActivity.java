@@ -24,8 +24,8 @@ public class MainActivity extends ActionBarActivity {
      */
     public void submitOrder(View view) {
 
-
-        String priceMsg="Free";
+        int amt=Quantity*5;
+        String priceMsg="Amount Due $"+(amt)+"\n Thank you";
         displayMessage(priceMsg);
     }
     private void displayMessage(String msg){
