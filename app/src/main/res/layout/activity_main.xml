@@ -9,16 +9,21 @@
         android:id="@+id/textQ"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="20dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
         android:textColor="@android:color/darker_gray"
 
      />
 
     <TextView android:text="0"
-        android:id="@+id/textQ1"
+        android:id="@+id/textquant"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="20dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
 
      />
 
@@ -27,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ORDER"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="16dp"
     />
 
 
