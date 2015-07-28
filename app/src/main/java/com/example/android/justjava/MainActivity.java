@@ -25,7 +25,12 @@ public class MainActivity extends ActionBarActivity {
     public void submitOrder(View view) {
 
 
-        displayPrice(Quantity*5);
+        String priceMsg="Free";
+        displayMessage(priceMsg);
+    }
+    private void displayMessage(String msg){
+        TextView price=(TextView)findViewById(R.id.textprice);
+        price.setText(msg);
     }
     public void increment(View view){
 
