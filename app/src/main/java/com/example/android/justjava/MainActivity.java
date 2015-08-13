@@ -32,7 +32,7 @@ public class MainActivity extends ActionBarActivity {
         CheckBox ckCream=(CheckBox)findViewById(R.id.ckCream);
         if(ckCream.isChecked())
         {
-        priceMsg="\n Please Add Whipped Cream \n Thank you ";
+        priceMsg+="\n Please Add Whipped Cream \n Thank you ";
         }
         displayMessage(priceMsg);
     }
