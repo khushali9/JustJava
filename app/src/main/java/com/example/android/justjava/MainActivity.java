@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import java.text.NumberFormat;
@@ -28,12 +29,22 @@ public class MainActivity extends ActionBarActivity {
 
 
         int amt=Quantity*5;
-        String priceMsg="Amount Due $"+(amt);
+        EditText name=(EditText)findViewById(R.id.name);
+        String priceMsg="Name "+name.getText().toString();
         CheckBox ckCream=(CheckBox)findViewById(R.id.ckCream);
         if(ckCream.isChecked())
         {
-        priceMsg+="\n Please Add Whipped Cream \n Thank you ";
+            amt+=1*Quantity;
+        priceMsg+="\n Please Add Whipped Cream ";
         }
+        CheckBox ckChoco=(CheckBox)findViewById(R.id.ckChoco);
+        if(ckChoco.isChecked())
+        {
+            amt+=2*Quantity;
+            priceMsg+="\n Please Add chocolate  ";
+        }
+
+        priceMsg+=" \n Amount Due $"+(amt)+" \nThank you";
         displayMessage(priceMsg);
     }
     private void displayMessage(String msg){

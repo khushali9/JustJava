@@ -1,3 +1,10 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -5,6 +12,14 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:id="@+id/name"
+        android:inputType="textCapWords"
+        android:layout_marginBottom="16dp"
+        />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -16,6 +31,18 @@
         android:id="@+id/ckCream"
         android:layout_height="wrap_content"
         android:text="Whipped Cream"
+        android:textSize="16sp"
+        android:paddingLeft="24dp"
+        android:layout_marginBottom="16dp"
+
+
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:id="@+id/ckChoco"
+        android:layout_height="wrap_content"
+        android:text="Chocolate"
         android:textSize="16sp"
         android:paddingLeft="24dp"
         android:layout_marginBottom="16dp"
@@ -102,3 +129,4 @@
 
 
 </LinearLayout>
+</ScrollView>
